@@ -13,7 +13,7 @@ iOS: 13.5 or higher | iPhone only
 !<img src="LanguageAnalyzer/Media/demo2.gif" width="175" height="350">
 
 # Installation
-Before launching LanguageAnalyzer in Xcode 12 or higher, install pods in your terminal using:
+Before launching the app in Xcode 12 or higher, install pods in your terminal using:
 ```ruby
 pod install
 ```
