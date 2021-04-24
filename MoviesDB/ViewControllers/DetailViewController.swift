@@ -43,41 +43,19 @@ class DetailViewController: UIViewController {
     
     func fetchMoreInformation() {
         print ("Fetching more information")
-//        let networkManager = NetworkManager()
-//        networkManager.getMovieDetailByIMDbID(imdbID: data!.imdbIDText)
         
         let networkManager = NetworkManager()
         networkManager.getMovieDetailByIMDbID(imdbID: data!.imdbIDText) { (d, fetched) in
             if (fetched) {
                 self.plotLabel.text = d?.plotLabelText
                 self.directorLabel.text = d?.directorLabelText
-            } else {
-//                let alert = UIAlertController(title: "Error", message: "An error occured. Please check your spelling or provide more information.", preferredStyle: .alert)
-//                alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
-//                self.present(alert, animated: true, completion: nil)
             }
         }
-
-
     }
     
     @objc func openInIMDbClicked(_ guesture: UITapGestureRecognizer) {
-//        print ("printing")
-//        print (data!.imdbIDText)
         let imdbURL = "https://www.imdb.com/title/" + data!.imdbIDText + "/"
         guard let url = URL(string: imdbURL) else { return }
         UIApplication.shared.open(url)
     }
 }
-
-//extension DetailViewController: UITableViewDataSource {
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return listData.count
-//    }
-//
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "listCell", for: indexPath)
-//        cell.textLabel?.text = listData[indexPath.row].titleLabelText
-//        return cell
-//    }
-//}

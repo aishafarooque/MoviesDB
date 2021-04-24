@@ -12,7 +12,6 @@ import Foundation
 struct Film: Decodable {
     let title: String
     let imdbID: String
-//    let actors: [String]
     let director: String?
     let plot: String?
     let posterURL: String
@@ -21,7 +20,6 @@ struct Film: Decodable {
     enum CodingKeys: String, CodingKey {
         case title = "Title"
         case imdbID = "imdbID"
-//        case actors = "Actors"
         case director = "Director"
         case plot = "Plot"
         case posterURL = "Poster"
@@ -33,7 +31,6 @@ struct Film: Decodable {
 extension Film: Displayable {
     var titleLabelText: String { title }
     var imdbIDText: String { imdbID }
-//    var actorsLabelText: [String] { actors }
     var directorLabelText: String? { "Director: " + director! }
     var plotLabelText: String? { plot }
     var posterURLLabelText: String { posterURL }

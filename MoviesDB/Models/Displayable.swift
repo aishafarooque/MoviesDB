@@ -10,7 +10,6 @@ import Foundation
 protocol Displayable {
     var titleLabelText: String { get }
     var imdbIDText: String { get }
-//    var actorsLabelText: [String] { get }
     var directorLabelText: String? { get }
     var plotLabelText: String? { get }
     var posterURLLabelText: String { get }

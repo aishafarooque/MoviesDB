@@ -9,6 +9,7 @@ import UIKit
 import Alamofire
 
 class ViewController: UITableViewController {
+    
     // Property to store the array of information you get back from the server.
     var films: [Film] = []
     var items: [Displayable] = []
