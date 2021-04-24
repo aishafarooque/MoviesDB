@@ -11,9 +11,8 @@ import Alamofire
 import SwiftyJSON
 
 class NetworkManager {
-
-    let clientID: String = "3fa6980"
     
+    /// Gets movie title, year, IMDb ID and type
     func getMovie (_ searchText: String, completionHandler: @escaping (Films?, Bool) -> () ) {
         
         print ("Fetching films.")
@@ -36,6 +35,7 @@ class NetworkManager {
             }
     }
     
+    /// Gets more movie information by the IMDb ID
     func getMovieDetailByIMDbID(imdbID: String, completionHandler: @escaping (Film?, Bool) -> () ) {
         print ("Fetching film by IMDb title")
 
@@ -55,6 +55,5 @@ class NetworkManager {
                     completionHandler(response.value, false)
                 }
             }
-
     }
 }
