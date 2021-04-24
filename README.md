@@ -10,7 +10,7 @@ This is an iOS client app that consumes the OMDb API.
  ### Deployment Target:
 iOS: 13.5 or higher | iPhone only
 
-!<img src="LanguageAnalyzer/Media/demo2.gif" width="175" height="350">
+!<img src="MoviesDB/Media/demo.mp4" width="175" height="350">
 
 # Installation
 Before launching the app in Xcode 12 or higher, install pods in your terminal using:
@@ -28,4 +28,4 @@ Aisha Farooque ![LinkedIn](https://www.linkedin.com/in/aishamfarooque/)
 
 # License
 
-**LanguageAnalyzer** is available under the MIT license.
+**MoviesDB** is available under the MIT license.
