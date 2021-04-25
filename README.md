@@ -2,7 +2,7 @@
 <a href="https://developer.apple.com/swift"><img src="https://img.shields.io/badge/swift5-compatible-4BC51D.svg?style=flat" alt="Swift 5 compatible" /></a>
 ![License](https://img.shields.io/github/license/JakeLin/SwiftWeather.svg?style=flat)
 
-This is an iOS client app that consumes the OMDb API.
+This is an iOS client app that consumes the OMDb API. The app has a search functionality and can open movies in IMDb on Safari.
  
  ### Prerequisites:
  Xcode: 12 or higher, Swift: 5
