@@ -10,7 +10,7 @@ This is an iOS client app that consumes the OMDb API.
  ### Deployment Target:
 iOS: 13.5 or higher | iPhone only
 
-!<img src="Media/demo.mov" width="175" height="350">
+!<img src="Media/demo.gif" width="175" height="350">
 
 # Installation
 Before launching the app in Xcode 12 or higher, install pods in your terminal using:
